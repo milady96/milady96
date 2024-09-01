@@ -1,0 +1,70 @@
+def mostrar_sala(sillas):
+print("Sala de Cine:")
+for i in range(0, 9, 3):
+print("".join(sillas[i:i+3]))
+print()
+
+def crear_sala():
+    return [´1´,´2´,´3´,´4´,´5´,´6´,´7´,´8´,´9´ ]
+
+    def asignar_puesto(sillas):
+    while True:
+        try:
+            silla = int(input("Ingrese el número de silla que desea apartar en la sala (1-9):"))
+            if silla < 1 or silla> 9: 
+                print("Por favor, ingrese u número entre 1 y 9.")
+                continue
+                if sillas[silla -1] == ´X´:
+                print("La silla ya está ocupada.Elija otra.") 
+                else:
+                    sillas[silla -1] = ´X´ ]# Marca la silla como oucpada
+                    print("fSilla {silla}apartada exitosamente.") 
+                    break
+                    except ValueError:
+                    print("Por favor, ingrese un número válido.")
+
+                    def cargar_sala():
+                    # Aquí puedes definir una sala ya cargada. Por ejemplo:
+                    return [´X´],´2´,´3´,´4´,´5´,´6´,´7´,´8,´9´] #Ejemplo con la silla 1 ocupada
+
+                    def menu_principal():
+                        sillas[]
+
+                        while True:
+                        print("Menú Principal:")
+                        print("1. Crear Sala")
+                        print("2. Ver Sala")    
+                        print("3. Asignar Puesto")
+                        print("4. Cargar Sala") 
+                        print("5 Salir")
+                        opcion =input("Seleccione la opción deseada:")
+
+                        if opcion ==´1´:
+                        sillas = crear_sala()
+                        print("Sala creada exitosamente.")
+                        elif opcion == ´2´:
+                            if not sillas:
+                            print("Primero debe crear o cargar una sala.")
+                            else:
+                            mostrar_sala(sillas)
+                            elif opcion ==´3´:
+                            if not sillas:
+                            print("Primero debe crear o cargar una sala.") 
+                            else:
+                            mostrar_sala(sillas)
+                            asignar_puesto(sillas)
+                            mostrar_sala(sillas)
+                            input("/nPresione ENTER para continuar...")
+                            elif opcion ==´4´:
+                            sillas = cargar_sala()
+                            print("Sala cargada exitosamente!!")    
+                            mostrar_sala(sillas)
+                            input("/nPresione ENTER para continuar...")
+                            elif opcion == ´5´:
+                            print("Saliendodel programa.
+                            ¡ hasta luego!")
+                            breakelse:
+                            print("Opción no válida. Intente nuevamente.")
+
+                            if--name--=="--main--":
+                                menu_principal()     
